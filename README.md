@@ -42,7 +42,7 @@ The code requires `python>=3.8`, as well as `pytorch>=1.7` and `torchvision>=0.8
 Clone the repository locally and install with
 
 ```
-git clone https://github.com/SysCV/sam-hq.git
+git clone https://github.com/siyuan668/seagrass-hq-sam.git
 cd sam-hq; pip install -e .
 ```
 
@@ -97,8 +97,6 @@ predictor = SamPredictor(sam)
 predictor.set_image(<your_image>)
 masks, _, _ = predictor.predict(<input_prompts>)
 ```
-
-Additionally, see the usage examples in our [demo](/demo/demo_hqsam.py) , [colab notebook](https://colab.research.google.com/drive/1QwAbn5hsdqKOD5niuBzuqQX4eLCbNKFL?usp=sharing) and [automatic mask generator notebook](https://colab.research.google.com/drive/1dhRq4eR6Fbl-yl1vbQvU9hqyyeOidQaU?usp=sharing).
 
 To obtain HQ-SAM's visual result:
 ```
