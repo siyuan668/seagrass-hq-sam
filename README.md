@@ -2,6 +2,10 @@
 
 Fine tune Segment Anything in High Quality for UAV seagrass images.
 
+<p align="center">
+<img src="figs/overlapped_image_out_1070.png "center" width="75%"/>
+</p>
+
 Introduction
 -----------------
 The recent Segment Anything Model (SAM) represents a big leap in scaling up segmentation models, allowing for powerful zero-shot capabilities and flexible prompting. Despite being trained with 1.1 billion masks, SAM's mask prediction quality falls short in many cases, particularly when dealing with objects that have intricate structures. We propose HQ-SAM, equipping SAM with the ability to accurately segment any object, while maintaining SAM's original promptable design, efficiency, and zero-shot generalizability. SAM-HQ is a variant of SAM that reuses and preserves the pre-trained model weights of SAM, while only introducing minimal additional parameters and computation. SAM-HQ first uses the early and final ViT features for improving mask decoders. 
